@@ -263,17 +263,17 @@ section {
 .Campana {
   background-color: #f9f9f9; /* Fondo blanco roto */
   color: #000; /* Texto negro */
-  padding: 20px 10px; /* Reduce el padding general */
+  padding: 50px 20px; /* Más espacio */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Espacio entre los elementos principales */
+  gap: 40px; /* Más espacio entre elementos */
 }
 
 .titulo-campana {
-  font-size: 2.5rem; /* Reduce el tamaño del título */
-  font-family: 'multiFont', sans-serif; /* Tipografía especial */
-  margin-bottom: 20px; /* Reduce el espacio debajo del título */
+  font-size: 4rem; /* Título más grande */
+  font-family: 'multiFont', sans-serif; /* Tipografía propia */
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -281,18 +281,19 @@ section {
   display: flex;
   flex-direction: row; /* Divide en dos columnas */
   justify-content: space-between;
-  gap: 20px; /* Reduce el espacio entre las columnas */
+  gap: 40px; /* Más espacio entre las columnas */
   width: 100%;
-  max-width: 1000px; /* Reduce el ancho máximo */
+  max-width: 1200px; /* Ancho máximo */
 }
 
 .contribuciones, .objetivos {
   flex: 1; /* Cada columna ocupa el mismo espacio */
+  font-family: 'multiFont', sans-serif; /* Tipografía propia */
 }
 
 .contribuciones h3, .objetivos h3 {
-  font-size: 1.8rem; /* Reduce el tamaño de los subtítulos */
-  margin-bottom: 10px; /* Reduce el espacio debajo de los subtítulos */
+  font-size: 2rem; /* Subtítulos más grandes */
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -326,13 +327,13 @@ section {
   display: flex;
   flex-direction: row; /* Coloca la barra y los objetivos en línea horizontal */
   align-items: center;
-  gap: 20px; /* Espacio entre la barra y los objetivos */
+  gap: 30px; /* Más espacio entre la barra y los objetivos */
   width: 100%;
 }
 
 .progreso-total {
-  width: 15px; /* Ancho de la barra */
-  height: 300px; /* Altura de la barra */
+  width: 20px; /* Barra más ancha */
+  height: 400px; /* Barra más larga */
   background-color: #ddd;
   border-radius: 10px;
   position: relative;
@@ -356,9 +357,9 @@ section {
   margin: 0;
   display: flex;
   flex-direction: column; /* Alinea los objetivos en columna */
-  justify-content: space-between; /* Distribuye los objetivos a lo largo de la barra */
-  height: 300px; /* Altura igual a la barra de progreso */
-  font-size: 0.9rem; /* Reduce el tamaño del texto */
+  justify-content: space-between; /* Más espacio entre los objetivos */
+  height: 400px; /* Altura igual a la barra de progreso */
+  font-size: 1rem;
 }
 
 .lista-objetivos li {
@@ -381,10 +382,10 @@ section {
 
 /* Botón DONAR AHORA */
 .boton-donar {
-  margin-top: 20px; /* Reduce el margen superior */
-  padding: 5px 10px; /* Reduce el tamaño del botón */
-  font-size: 1.2rem; /* Reduce el tamaño del texto */
-  font-family: 'multiFont', sans-serif; /* Usa la tipografía especial */
+  margin-top: 40px;
+  padding: 15px 30px; /* Botón más grande */
+  font-size: 1.5rem; /* Texto más grande */
+  font-family: 'multiFont', sans-serif; /* Tipografía propia */
   color: #fff;
   background-color: #3b1c1c; /* Color del botón */
   border: none;
@@ -418,21 +419,21 @@ section {
 }
 
 .imagen-juego {
-  flex: 1;
+  flex: 2; /* Ocupa 2/3 del espacio horizontal */
   display: flex;
   justify-content: center;
 }
 
 .screenshot {
-  width: 500px;
-  height: 500px;
-  object-fit: cover; /* Asegura que la imagen mantenga proporciones */
+  width: 100%; /* Imagen más grande */
+  height: auto;
+  max-width: 700px; /* Limita el ancho máximo */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .texto-juego {
-  flex: 1;
+  flex: 1; /* Ocupa 1/3 del espacio horizontal */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -452,8 +453,66 @@ section {
   margin-bottom: 20px;
 }
 
+.subtitulo-personajes {
+  font-size: 2rem;
+  font-family: 'multiFont', sans-serif;
+  margin-top: 20px;
+}
+
 .caja-texto p {
   font-size: 1.2rem;
   line-height: 1.6;
   color: #fff; /* Texto blanco */
+}
+
+/* SECCION FAQ */
+.FAQ {
+  background-color: #fff; /* Fondo blanco */
+  color: #000; /* Texto negro */
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contenido-faq {
+  display: flex;
+  flex-direction: row; /* Divide en dos columnas */
+  gap: 40px; /* Espacio entre preguntas y comentarios */
+  max-width: 1200px;
+  width: 100%;
+}
+
+.faq-preguntas {
+  flex: 2; /* Ocupa 2/3 del espacio */
+}
+
+.faq-comentarios {
+  flex: 1; /* Ocupa 1/3 del espacio */
+}
+
+.titulo-faq, .titulo-comentarios {
+  font-size: 3rem;
+  font-family: 'multiFont', sans-serif; /* Tipografía propia */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.pregunta h3 {
+  font-size: 1.5rem;
+  font-family: 'multiFont', sans-serif; /* Tipografía propia */
+  margin-bottom: 10px;
+}
+
+.pregunta p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.faq-comentarios {
+  background-color: #f9f9f9; /* Fondo claro para los comentarios */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
