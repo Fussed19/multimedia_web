@@ -153,10 +153,10 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 30px; /* Reduce el espacio entre los miembros */
-  flex-wrap: wrap; /* Permite que los miembros se ajusten en varias filas si es necesario */
+  gap: 30px; 
+  flex-wrap: wrap; 
   width: 100%;
-  max-width: 1200px; /* Limita el ancho máximo de la sección */
+  max-width: 1200px; 
 }
 
 .miembro {
@@ -164,27 +164,27 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 200px; /* Reduce el ancho máximo de cada miembro */
+  max-width: 200px; 
 }
 
 .miembro img {
-  width: 150px; /* Reduce el tamaño de las imágenes */
-  height: 150px; /* Mantén las imágenes cuadradas */
-  border-radius: 10%; /* Ajusta el redondeo */
-  margin-bottom: 10px; /* Reduce el espacio debajo de las imágenes */
+  width: 150px; 
+  height: 150px; 
+  border-radius: 10%; 
+  margin-bottom: 10px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .miembro h3 {
   font-family: sans-serif;
-  font-size: 1.2rem; /* Reduce el tamaño del texto */
-  margin: 5px 0; /* Reduce el espacio entre el nombre y la descripción */
+  font-size: 1.2rem; 
+  margin: 5px 0; 
 }
 
 .miembro p {
   font-family: sans-serif;
-  font-size: 1rem; /* Reduce el tamaño del texto */
-  line-height: 1.4; /* Ajusta el espaciado entre líneas */
+  font-size: 1rem; 
+  line-height: 1.4; 
   margin: 0;
 }
 
@@ -261,20 +261,20 @@ section {
 
 /* SECCION CAMPAÑA */
 .Campana {
-  background-color: #f9f9f9; /* Fondo blanco roto */
-  color: #000; /* Texto negro */
-  padding: 30px 20px; /* Reduce el padding superior para eliminar espacio vacío */
+  background-color: #f9f9f9;
+  color: #000; 
+  padding: 30px 20px; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Reduce el espacio general entre los elementos */
+  gap: 20px; 
 }
 
 .titulo-campana {
-  font-size: 4rem; /* Título grande */
-  font-family: 'multiFont', sans-serif; /* Tipografía propia */
-  margin-top: 0; /* Elimina cualquier margen superior */
-  margin-bottom: 15px; /* Reduce el espacio debajo del título */
+  font-size: 4rem; 
+  font-family: 'multiFont', sans-serif; 
+  margin-top: 0; 
+  margin-bottom: 15px; 
   text-align: center;
 }
 
@@ -282,7 +282,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 20px; /* Reduce el espacio entre las columnas */
+  gap: 20px; 
   width: 100%;
   max-width: 1200px;
 }
@@ -293,105 +293,102 @@ section {
 
 .contribuciones h3, .objetivos h3 {
   font-size: 2.3rem;
-  font-family: 'multiFont', sans-serif; /* Aplica la tipografía propia */
-  margin-bottom: 10px; /* Reduce el espacio debajo de los subtítulos */
+  font-family: 'multiFont', sans-serif;
+  margin-bottom: 10px; 
   text-align: center;
 }
 
 .contribucion {
-  margin-bottom: 8px; /* Reduce el espacio entre las contribuciones */
+  margin-bottom: 8px; 
 }
 
 .contribucion h4 {
-  font-size: 1.2rem; /* Títulos con tipografía propia */
+  font-size: 1.2rem; 
   font-family: 'multiFont', sans-serif;
-  margin-bottom: 5px; /* Reduce el espacio debajo del título */
+  margin-bottom: 5px; 
 }
 
 .contribucion p, .contribucion ul li {
-  font-size: 1rem; /* Texto estándar */
-  font-family: sans-serif; /* Sin tipografía propia */
+  font-size: 1rem; 
+  font-family: sans-serif; 
 }
 
 .contribucion p {
-  margin-bottom: 5px; /* Reduce el espacio debajo del texto */
+  margin-bottom: 5px; 
 }
 
 .contribucion ul {
   list-style: disc;
-  padding-left: 15px; /* Reduce el padding de la lista */
+  padding-left: 15px; 
 }
 
 .contribucion ul li {
-  margin-bottom: 3px; /* Reduce el espacio entre los elementos de la lista */
+  margin-bottom: 3px; 
 }
-
-/* Barra de progreso única (vertical) */
 .barra-progreso-unica {
   display: flex;
-  flex-direction: row; /* Coloca la barra y los objetivos en línea horizontal */
+  flex-direction: row; 
   align-items: center;
-  gap: 20px; /* Reduce el espacio entre la barra y los objetivos */
+  gap: 20px; 
   width: 100%;
 }
 
 .progreso-total {
-  width: 20px; /* Barra más ancha */
-  height: 400px; /* Barra más corta */
+  width: 20px; 
+  height: 400px; 
   background-color: #ddd;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
   display: flex;
-  flex-direction: column-reverse; /* Invierte la dirección para que el progreso crezca hacia arriba */
+  flex-direction: column-reverse; 
 }
 
 .progreso-actual {
-  width: 100%; /* Ocupa todo el ancho de la barra */
-  height: 45%; /* Progreso actual */
-  background-color: #3b1c1c; /* Color del progreso */
-  border-radius: 10px 10px 0 0; /* Redondeo en la parte superior */
-  transition: height 0.5s ease-in-out; /* Animación suave */
+  width: 100%; 
+  height: 45%; 
+  background-color: #3b1c1c; 
+  border-radius: 10px 10px 0 0; 
+  transition: height 0.5s ease-in-out; 
 }
 
-/* Lista de objetivos (alineados verticalmente a la derecha de la barra) */
 .lista-objetivos {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column; /* Alinea los objetivos en columna */
-  justify-content: space-between; /* Más espacio entre los objetivos */
-  height: 400px; /* Altura igual a la barra de progreso */
+  flex-direction: column; 
+  justify-content: space-between; 
+  height: 400px; 
   font-size: 1rem;
 }
 
 .lista-objetivos li {
   position: relative;
-  font-size: 0.9rem; /* Tamaño del texto */
-  text-align: left; /* Alinea el texto a la izquierda */
+  font-size: 0.9rem; 
+  text-align: left;
 }
 
 .lista-objetivos li::before {
   content: '';
   position: absolute;
-  left: -20px; /* Ajusta la posición del marcador */
+  left: -20px; 
   top: 50%;
   transform: translateY(-50%);
-  width: 8px; /* Tamaño del marcador */
-  height: 8px; /* Tamaño del marcador */
-  background-color: #3b1c1c; /* Color del marcador */
-  border-radius: 50%; /* Forma circular */
+  width: 8px; 
+  height: 8px; 
+  background-color: #3b1c1c;
+  border-radius: 50%; 
 }
 
 /* Botón DONAR AHORA */
 .boton-donar {
-  margin-top: 15px; /* Reduce el espacio superior del botón */
-  padding: 15px 30px; /* Botón ligeramente más pequeño */
+  margin-top: 15px; 
+  padding: 15px 30px; 
   font-size: 1.5rem;
   font-family: 'multiFont', sans-serif;
   color: #fff;
-  background-color: #3b1c1c; /* Color del botón */
+  background-color: #3b1c1c; 
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -399,15 +396,15 @@ section {
 }
 
 .boton-donar:hover {
-  background-color: #5a2a2a; /* Color más claro al pasar el ratón */
-  transform: scale(1.05); /* Efecto de agrandamiento */
+  background-color: #5a2a2a; 
+  transform: scale(1.05); 
 }
 
 /* SECCION JUEGO */
 .Juego {
-  background-color: #3b1c1c; /* Fondo rojo oscuro */
-  color: #fff; /* Texto blanco */
-  padding: 40px 15px; /* Reduce el padding general */
+  background-color: #3b1c1c; 
+  color: #fff; 
+  padding: 40px 15px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -416,14 +413,14 @@ section {
 .contenido-juego {
   display: flex;
   flex-direction: row;
-  gap: 30px; /* Reduce el espacio entre la imagen y el texto */
-  max-width: 1200px; /* Reduce el ancho máximo */
+  gap: 30px; 
+  max-width: 1200px; 
   width: 100%;
   align-items: center;
 }
 
 .imagen-juego {
-  flex: 2; /* Imagen más grande */
+  flex: 2; 
   display: flex;
   justify-content: center;
 }
@@ -431,56 +428,56 @@ section {
 .screenshot {
   width: 100%;
   height: auto;
-  max-width: 800px; /* Reduce el tamaño máximo de la imagen */
+  max-width: 800px; 
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .texto-juego {
-  flex: 1; /* Texto más pequeño */
+  flex: 1; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Subir el texto */
-  gap: 15px; /* Reduce el espacio entre los cuadros de texto */
+  justify-content: flex-start; 
+  gap: 15px; 
 }
 
 .caja-texto {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Reduce el espacio entre los cuadros */
+  gap: 10px; 
 }
 
 .titulo-juego {
-  font-size: 3.5rem; /* Reduce el tamaño del título */
+  font-size: 3.5rem; 
   font-family: 'multiFont', sans-serif;
-  margin-bottom: 10px; /* Reduce el espacio debajo del título */
+  margin-bottom: 10px; 
   text-align: center;
 }
 
 .cuadro-texto {
-  background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
-  padding: 15px; /* Reduce el padding interno */
+  background-color: rgba(255, 255, 255, 0.1); 
+  padding: 15px; 
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra elegante */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
   text-align: center;
 }
 
 .cuadro-texto h3 {
-  font-size: 1.6rem; /* Reduce el tamaño del subtítulo */
-  font-family: 'multiFont', sans-serif; /* Tipografía propia */
-  margin-bottom: 8px; /* Reduce el espacio debajo del subtítulo */
+  font-size: 1.6rem; 
+  font-family: 'multiFont', sans-serif; 
+  margin-bottom: 8px; 
 }
 
 .cuadro-texto p {
-  font-size: 1rem; /* Reduce el tamaño del texto */
-  line-height: 1.5; /* Ajusta el espaciado entre líneas */
+  font-size: 1rem; 
+  line-height: 1.5; 
   color: #fff;
 }
 
 /* SECCION FAQ */
 .FAQ {
-  background-color: #fff; /* Fondo blanco */
-  color: #000; /* Texto negro */
+  background-color: #fff; 
+  color: #000; 
   padding: 50px 20px;
   display: flex;
   flex-direction: column;
@@ -489,35 +486,35 @@ section {
 }
 
 .titulo-faq {
-  font-size: 4rem; /* Título más grande */
-  font-family: 'multiFont', sans-serif; /* Tipografía propia */
+  font-size: 4rem; 
+  font-family: 'multiFont', sans-serif; 
   margin-bottom: 30px;
   text-align: center;
 }
 
 .tabla-faq {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Distribuye las cajas en columnas */
-  gap: 20px; /* Espacio entre las cajas */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px; 
   width: 100%;
-  max-width: 1200px; /* Ancho máximo */
-  justify-content: center; /* Centra las columnas */
-  justify-items: center; /* Centra las cajas en la última fila */
+  max-width: 1200px;
+  justify-content: center;
+  justify-items: center;
 }
 
 .caja-pregunta {
-  background-color: #f9f9f9; /* Fondo claro */
+  background-color: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
   text-align: left;
-  width: 100%; /* Asegura que las cajas ocupen el ancho completo dentro de las columnas */
-  max-width: 400px; /* Limita el ancho máximo de las cajas */
+  width: 100%; 
+  max-width: 400px; 
 }
 
 .caja-pregunta h3 {
   font-size: 1.5rem;
-  font-family: 'multiFont', sans-serif; /* Tipografía propia */
+  font-family: 'multiFont', sans-serif; 
   margin-bottom: 10px;
 }
 
@@ -528,8 +525,8 @@ section {
 
 /* SECCION COMENTARIOS */
 .Comentarios {
-  background-color: #5a2a2a; /* Fondo claro */
-  color: #000; /* Texto negro */
+  background-color: #5a2a2a;
+  color: #000;
   padding: 50px 20px;
   display: flex;
   flex-direction: column;
@@ -537,8 +534,8 @@ section {
 }
 
 .titulo-comentarios {
-  font-size: 3.5rem; /* Título grande */
-  font-family: 'multiFont', sans-serif; /* Tipografía propia */
+  font-size: 3.5rem; 
+  font-family: 'multiFont', sans-serif; 
   margin-bottom: 30px;
   text-align: center;
 }
@@ -546,22 +543,22 @@ section {
 .contenido-comentarios {
   width: 100%;
   max-width: 800px;
-  background-color: #fff; /* Fondo blanco */
+  background-color: #fff; 
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 /* SECCION AUTORÍA Y DISCLAIMER */
 .Autoria {
-  background-color: #202020; /* Fondo oscuro */
-  color: #fff; /* Texto blanco */
-  padding: 15px 20px; /* Reduce el padding superior e inferior */
+  background-color: #202020;
+  color: #fff;
+  padding: 15px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px; /* Reduce el espacio entre los elementos */
-  height: 50vh; /* La mitad de la altura de las otras secciones */
+  gap: 10px;
+  height: 50vh;
 }
 
 .contenido-autoria {
@@ -569,112 +566,52 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 10px; /* Reduce el espacio entre los elementos */
+  gap: 10px;
   max-width: 800px;
 }
 
 .logo-y-texto {
   display: flex;
-  flex-direction: row; /* Coloca el logo y el texto en línea */
+  flex-direction: row;
   align-items: center;
-  gap: 20px; /* Espacio entre el logo y el texto */
+  gap: 20px;
 }
 
 .logo-equipo img {
-  width: 100px; /* Tamaño más pequeño del logo */
+  width: 100px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra elegante */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .texto-autor h3 {
-  font-size: 1.5rem; /* Tamaño del texto de autoría */
-  font-family: 'multiFont', sans-serif; /* Tipografía propia */
+  font-size: 1.5rem;
+  font-family: 'multiFont', sans-serif;
   margin: 0;
   color: #fff;
 }
 
 .disclaimer p {
-  font-size: 1.2rem; /* Texto del disclaimer más grande */
+  font-size: 1.2rem;
   line-height: 1.6;
-  color: #ccc; /* Texto gris claro */
+  color: #ccc;
 }
 
 /* LOGO FIJO EN LA ESQUINA INFERIOR DERECHA */
 .logo-fijo {
   position: fixed;
-  bottom: 20px; /* Distancia desde la parte inferior */
-  right: 80px; /* Distancia desde el botón de mute */
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  bottom: 20px; 
+  right: 80px;
+  z-index: 1000; 
 }
 
-.logo-juego-fijo {
-  width: 80px; /* Tamaño del logo */
-  height: auto;
-  opacity: 0.7; /* Hace el logo un poco opaco */
-  transition: opacity 0.3s ease; /* Transición suave al pasar el ratón */
-  cursor: pointer;
-}
+/* AUDIO */
 
-.logo-juego-fijo:hover {
-  opacity: 1; /* Aumenta la opacidad al pasar el ratón */
-}
-
-/* Contenedor del logo y botón de mute */
-.logo-y-audio {
-  position: fixed;
-  bottom: 20px; /* Distancia desde la parte inferior */
-  right: 20px; /* Distancia desde la parte derecha */
-  display: flex;
-  flex-direction: column; /* Coloca los elementos en columna */
-  align-items: center;
-  gap: 10px; /* Espacio entre el logo y el botón */
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
-}
-
-/* Estilo del logo */
-.logo-juego-fijo {
-  width: 80px; /* Tamaño del logo */
-  height: auto;
-  opacity: 0.7; /* Hace el logo un poco opaco */
-  transition: opacity 0.3s ease; /* Transición suave al pasar el ratón */
-  cursor: pointer;
-}
-
-.logo-juego-fijo:hover {
-  opacity: 1; /* Aumenta la opacidad al pasar el ratón */
-}
-
-/* Estilo del botón de mute */
-.mute-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  width: 40px; /* Tamaño del botón */
-  height: 40px; /* Tamaño del botón */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mute-icon {
-  width: 30px; /* Tamaño del icono */
-  height: auto;
-  opacity: 0.7; /* Hace el icono un poco opaco */
-  transition: opacity 0.3s ease; /* Transición suave al pasar el ratón */
-}
-
-.mute-icon:hover {
-  opacity: 1; /* Aumenta la opacidad al pasar el ratón */
-}
-
-/* BOTÓN DE MUTE FIJO */
 .audio-fijo {
   position: fixed;
-  bottom: 20px; /* Distancia desde la parte inferior */
-  left: 20px; /* Distancia desde la parte izquierda */
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  bottom: 20px; 
+  left: 20px;
+  z-index: 1000; 
 }
 
 .mute-button {
@@ -682,20 +619,20 @@ section {
   border: none;
   cursor: pointer;
   padding: 0;
-  width: 40px; /* Tamaño del botón */
-  height: 40px; /* Tamaño del botón */
+  width: 40px;
+  height: 40px; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .mute-icon {
-  width: 30px; /* Tamaño del icono */
+  width: 30px; 
   height: auto;
-  opacity: 0.7; /* Hace el icono un poco opaco */
-  transition: opacity 0.3s ease; /* Transición suave al pasar el ratón */
+  opacity: 0.7; 
+  transition: opacity 0.3s ease;
 }
 
 .mute-icon:hover {
-  opacity: 1; /* Aumenta la opacidad al pasar el ratón */
+  opacity: 1; 
 }

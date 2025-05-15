@@ -6,11 +6,10 @@ function toggleMenu() {
 
 // Control de audio para el botón de mute
 const muteButton = document.getElementById('mute-button');
-const audio = new Audio('audio/cancionMain.mp3'); // Asegúrate de que esta ruta sea correcta
+const audio = new Audio('audio/cancionMain.mp3'); 
 
 audio.loop = true; // Reproduce en bucle
 
-// Reproduce el audio después de una interacción del usuario
 document.addEventListener('DOMContentLoaded', () => {
   document.body.addEventListener('click', () => {
     if (audio.paused) {
@@ -18,13 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Error al intentar reproducir el audio:', error);
       });
     }
-  }, { once: true }); // Asegura que solo se ejecute una vez
+  }, { once: true }); 
 });
 
 let isMuted = false;
 
 muteButton.addEventListener('click', () => {
   isMuted = !isMuted;
-  audio.muted = isMuted; // Activa o desactiva el mute
+  audio.muted = isMuted; 
   muteButton.querySelector('img').src = isMuted ? 'image/unmute_icon.png' : 'image/mute_icon.png'; // Cambia el icono
 });
