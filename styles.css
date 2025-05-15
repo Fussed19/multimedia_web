@@ -35,20 +35,13 @@ body {
   width: 250px;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
-  transform: translateX(-100%);
+  transform: translateX(-100%); /* Oculta el menú fuera de la pantalla */
   transition: transform 0.3s ease-in-out;
   padding: 20px;
-  visibility: hidden;
-  display: block;
 }
 
 .nav-menu.show {
-  transform: translateX(0);
-  visibility: visible;
-}
-
-.nav-menu.show {
-  transform: translateX(0);
+  transform: translateX(0); /* Muestra el menú */
 }
 
 .nav-menu.hidden {
