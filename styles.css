@@ -267,13 +267,13 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 30px; /* Reduce el espacio general entre los elementos */
 }
 
 .titulo-campana {
-  font-size: 4rem; /* Título más grande */
+  font-size: 4rem; /* Título grande */
   font-family: 'multiFont', sans-serif; /* Tipografía propia */
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* Reduce el espacio debajo del título */
   text-align: center;
 }
 
@@ -281,7 +281,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 40px;
+  gap: 30px; /* Reduce el espacio entre las columnas */
   width: 100%;
   max-width: 1200px;
 }
@@ -291,19 +291,20 @@ section {
 }
 
 .contribuciones h3, .objetivos h3 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2.3rem;
+  font-family: 'multiFont', sans-serif; /* Aplica la tipografía propia */
+  margin-bottom: 15px; /* Reduce el espacio debajo de los subtítulos */
   text-align: center;
 }
 
 .contribucion {
-  margin-bottom: 15px; /* Reduce el espacio entre las contribuciones */
+  margin-bottom: 10px; /* Reduce el espacio entre las contribuciones */
 }
 
 .contribucion h4 {
   font-size: 1.2rem; /* Títulos con tipografía propia */
   font-family: 'multiFont', sans-serif;
-  margin-bottom: 5px;
+  margin-bottom: 5px; /* Reduce el espacio debajo del título */
 }
 
 .contribucion p, .contribucion ul li {
@@ -329,13 +330,13 @@ section {
   display: flex;
   flex-direction: row; /* Coloca la barra y los objetivos en línea horizontal */
   align-items: center;
-  gap: 30px; /* Más espacio entre la barra y los objetivos */
+  gap: 20px; /* Reduce el espacio entre la barra y los objetivos */
   width: 100%;
 }
 
 .progreso-total {
   width: 20px; /* Barra más ancha */
-  height: 450px; /* Barra más larga */
+  height: 400px; /* Barra más corta */
   background-color: #ddd;
   border-radius: 10px;
   position: relative;
@@ -384,9 +385,9 @@ section {
 
 /* Botón DONAR AHORA */
 .boton-donar {
-  margin-top: 40px;
-  padding: 20px 40px; /* Botón más grande */
-  font-size: 1.8rem;
+  margin-top: 20px; /* Reduce el espacio superior del botón */
+  padding: 15px 30px; /* Botón ligeramente más pequeño */
+  font-size: 1.5rem;
   font-family: 'multiFont', sans-serif;
   color: #fff;
   background-color: #3b1c1c; /* Color del botón */
@@ -403,8 +404,8 @@ section {
 
 /* SECCION JUEGO */
 .Juego {
-  background-color: #3b1c1c;
-  color: #fff;
+  background-color: #3b1c1c; /* Fondo rojo oscuro */
+  color: #fff; /* Texto blanco */
   padding: 50px 20px;
   display: flex;
   justify-content: center;
@@ -414,14 +415,14 @@ section {
 .contenido-juego {
   display: flex;
   flex-direction: row;
-  gap: 40px;
-  max-width: 1200px;
+  gap: 40px; /* Espacio entre la imagen y el texto */
+  max-width: 1400px; /* Ancho máximo más grande */
   width: 100%;
   align-items: center;
 }
 
 .imagen-juego {
-  flex: 3; /* Imagen más grande */
+  flex: 2; /* Imagen mucho más grande */
   display: flex;
   justify-content: center;
 }
@@ -429,36 +430,54 @@ section {
 .screenshot {
   width: 100%;
   height: auto;
-  max-width: 800px; /* Imagen más grande */
+  max-width: 900px; /* Imagen más grande */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .texto-juego {
-  flex: 2; /* Texto más pequeño */
+  flex: 1; /* Texto más pequeño */
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  gap: 20px; /* Espacio entre los cuadros de texto */
 }
 
 .caja-texto {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .titulo-juego {
-  font-size: 4rem; /* Título más pequeño */
+  font-size: 4rem; /* Título grande */
   font-family: 'multiFont', sans-serif;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.caja-texto p {
+.cuadro-texto {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra elegante */
+  text-align: center;
+}
+
+.cuadro-texto h3 {
+  font-size: 1.8rem;
+  font-family: 'multiFont', sans-serif; /* Tipografía propia */
+  margin-bottom: 10px;
+}
+
+.cuadro-texto p {
   font-size: 1.2rem;
   line-height: 1.6;
   color: #fff;
+}
+
+.dlc {
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo ligeramente más claro */
 }
 
 /* SECCION FAQ */
@@ -473,15 +492,18 @@ section {
 }
 
 .titulo-faq {
-  font-size: 3.5rem; /* Título grande */
+  font-size: 4rem; /* Título más grande */
   font-family: 'multiFont', sans-serif; /* Tipografía propia */
   margin-bottom: 30px;
   text-align: center;
 }
 
-.pregunta {
+.tabla-faq {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Distribuye las cajas en columnas */
+  gap: 20px; /* Espacio entre las cajas */
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px; /* Ancho máximo */
 }
 
 .caja-pregunta {
@@ -489,7 +511,7 @@ section {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-  margin-bottom: 20px;
+  text-align: left;
 }
 
 .caja-pregunta h3 {
