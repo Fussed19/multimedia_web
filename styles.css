@@ -673,7 +673,7 @@ section {
 .audio-fijo {
   position: fixed;
   bottom: 20px; /* Distancia desde la parte inferior */
-  right: 20px; /* Distancia desde la parte derecha */
+  left: 20px; /* Distancia desde la parte izquierda */
   z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
