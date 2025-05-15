@@ -9,7 +9,7 @@ body, html {
   margin: 0;
   padding: 0;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   font-family: sans-serif; 
 }
 
@@ -106,18 +106,27 @@ section {
   margin: 0;
   margin-top: 15px;
 }
+
 /* EQUIPO */
 
 .Equipo {
-  background-color: #3b1c1c;
-  color: #fff;
+  background-color: #f9f9f9; 
+  color: #000; 
 }
 
 .titulo-equipo {
   font-family: 'multiFont', sans-serif;
   font-size: 4rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  padding-left: 15%;
+  text-align: left;
+}
+
+.descripcion-equipo {
+  font-size: 1.2rem;
   text-align: center;
+  margin-bottom: 30px;
+  color: #333;
 }
 
 .equipo-logo {
@@ -125,7 +134,7 @@ section {
 }
 
 .equipo-logo img {
-  width: 150px;
+  width: 200px;
   height: auto;
 }
 
@@ -133,7 +142,7 @@ section {
   display: flex; 
   flex-direction: row;
   justify-content: center;
-  gap: 20px; 
+  gap: 40px; 
   width: 100%;
 }
 
@@ -146,9 +155,9 @@ section {
 }
 
 .miembro img {
-  width: 100px;
-  height: 200px;
-  border-radius: 5%;
+  width: 200px; 
+  height: 300px;
+  border-radius: 10%;
   margin-bottom: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -168,15 +177,20 @@ section {
 
 .equipo-logos {
   display: flex;
-  justify-content: center; 
+  justify-content: space-between;
   align-items: center;
-  gap: 20px; 
+  width: 100%;
+  max-width: 800px;
   margin-bottom: 30px;
 }
 
-.logo-empresa,
+.logo-empresa {
+  width: 200px; 
+  height: auto;
+}
+
 .logo-juego {
-  width: 200px; /* Aumenta el tamaño del logo */
+  width: 500px;
   height: auto;
 }
 
