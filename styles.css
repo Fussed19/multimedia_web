@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'multiFont';
+  src: url('fonts/multiFont.ttf') format('truetype');
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif; 
+}
+
+.Inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000; 
+  color: #fff; 
+  text-align: center;
+}
+
+.tituloInicio {
+  font-family: 'multiFont', sans-serif;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.lema {
+  font-family: 'multiFont', sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  margin-top: 10px;
+}
