@@ -116,26 +116,26 @@ section {
 
 .titulo-descripcion-equipo {
   display: flex;
-  flex-direction: row; 
-  align-items: center; 
+  flex-direction: column; 
+  align-items: left; 
   justify-content: space-between; 
   width: 100%;
   max-width: 1200px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .titulo-equipo {
   font-family: 'multiFont', sans-serif;
-  font-size: 4rem;
-  margin: 0;
+  font-size: 6rem;
+  margin: 20px;
   text-align: left;
 }
 
 .descripcion-equipo {
   font-size: 1.5rem; 
   color: #333;
-  margin: 0;
-  text-align: right;
+  margin: 20px;
+  text-align: left;
   max-width: 50%; 
 }
 
@@ -165,7 +165,7 @@ section {
 }
 
 .miembro img {
-  width: 300px; 
+  width: 200px; 
   height: 300px; 
   border-radius: 10%; 
   margin-bottom: 15px; 
@@ -173,7 +173,7 @@ section {
 }
 
 .miembro h3 {
-  font-family: sans-serif;
+  font-family: 'miltiFont', sans-serif;
   font-size: 1.5rem; 
   margin: 10px 0 5px 0;
 }
@@ -191,7 +191,7 @@ section {
   align-items: center;
   width: 100%;
   max-width: 1200px; 
-  margin-bottom: 40px; 
+  margin-bottom: 30px; 
 }
 
 .logo-empresa {
@@ -200,7 +200,7 @@ section {
 }
 
 .logo-juego {
-  width: 600px; 
+  width: 700px; 
   height: auto;
 }
 
