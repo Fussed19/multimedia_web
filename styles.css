@@ -263,7 +263,7 @@ section {
 .Campana {
   background-color: #f9f9f9; /* Fondo blanco roto */
   color: #000; /* Texto negro */
-  padding: 40px 20px; /* Reduce el padding general */
+  padding: 30px 20px; /* Reduce el padding superior para eliminar espacio vacío */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -273,6 +273,7 @@ section {
 .titulo-campana {
   font-size: 4rem; /* Título grande */
   font-family: 'multiFont', sans-serif; /* Tipografía propia */
+  margin-top: 0; /* Elimina cualquier margen superior */
   margin-bottom: 15px; /* Reduce el espacio debajo del título */
   text-align: center;
 }
@@ -406,7 +407,7 @@ section {
 .Juego {
   background-color: #3b1c1c; /* Fondo rojo oscuro */
   color: #fff; /* Texto blanco */
-  padding: 50px 20px;
+  padding: 40px 15px; /* Reduce el padding general */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -415,14 +416,14 @@ section {
 .contenido-juego {
   display: flex;
   flex-direction: row;
-  gap: 40px; /* Espacio entre la imagen y el texto */
-  max-width: 1400px; /* Ancho máximo más grande */
+  gap: 30px; /* Reduce el espacio entre la imagen y el texto */
+  max-width: 1200px; /* Reduce el ancho máximo */
   width: 100%;
   align-items: center;
 }
 
 .imagen-juego {
-  flex: 2; /* Imagen mucho más grande */
+  flex: 2; /* Imagen más grande */
   display: flex;
   justify-content: center;
 }
@@ -430,7 +431,7 @@ section {
 .screenshot {
   width: 100%;
   height: auto;
-  max-width: 900px; /* Imagen más grande */
+  max-width: 800px; /* Reduce el tamaño máximo de la imagen */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -440,44 +441,40 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* Subir el texto */
-  gap: 20px; /* Espacio entre los cuadros de texto */
+  gap: 15px; /* Reduce el espacio entre los cuadros de texto */
 }
 
 .caja-texto {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Reduce el espacio entre los cuadros */
+  gap: 10px; /* Reduce el espacio entre los cuadros */
 }
 
 .titulo-juego {
-  font-size: 4rem; /* Título grande */
+  font-size: 3.5rem; /* Reduce el tamaño del título */
   font-family: 'multiFont', sans-serif;
-  margin-bottom: 15px; /* Reduce el espacio debajo del título */
+  margin-bottom: 10px; /* Reduce el espacio debajo del título */
   text-align: center;
 }
 
 .cuadro-texto {
   background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
-  padding: 20px;
+  padding: 15px; /* Reduce el padding interno */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra elegante */
   text-align: center;
 }
 
 .cuadro-texto h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem; /* Reduce el tamaño del subtítulo */
   font-family: 'multiFont', sans-serif; /* Tipografía propia */
-  margin-bottom: 10px;
+  margin-bottom: 8px; /* Reduce el espacio debajo del subtítulo */
 }
 
 .cuadro-texto p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1rem; /* Reduce el tamaño del texto */
+  line-height: 1.5; /* Ajusta el espaciado entre líneas */
   color: #fff;
-}
-
-.dlc {
-  background-color: rgba(255, 255, 255, 0.2); /* Fondo ligeramente más claro */
 }
 
 /* SECCION FAQ */
@@ -505,6 +502,7 @@ section {
   width: 100%;
   max-width: 1200px; /* Ancho máximo */
   justify-content: center; /* Centra las columnas */
+  justify-items: center; /* Centra las cajas en la última fila */
 }
 
 .caja-pregunta {
@@ -513,6 +511,19 @@ section {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
   text-align: left;
+  width: 100%; /* Asegura que las cajas ocupen el ancho completo dentro de las columnas */
+  max-width: 400px; /* Limita el ancho máximo de las cajas */
+}
+
+.caja-pregunta h3 {
+  font-size: 1.5rem;
+  font-family: 'multiFont', sans-serif; /* Tipografía propia */
+  margin-bottom: 10px;
+}
+
+.caja-pregunta p {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* SECCION COMENTARIOS */
@@ -545,11 +556,11 @@ section {
 .Autoria {
   background-color: #202020; /* Fondo oscuro */
   color: #fff; /* Texto blanco */
-  padding: 50px 20px;
+  padding: 30px 20px; /* Reduce el padding general */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 15px; /* Reduce el espacio entre los elementos */
 }
 
 .contenido-autoria {
@@ -557,19 +568,48 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 20px;
+  gap: 15px; /* Reduce el espacio entre los elementos */
   max-width: 800px;
 }
 
+.logo-y-texto {
+  display: flex;
+  flex-direction: row; /* Coloca el logo y el texto en línea */
+  align-items: center;
+  gap: 20px; /* Espacio entre el logo y el texto */
+}
+
 .logo-equipo img {
-  width: 150px; /* Tamaño del logo */
+  width: 100px; /* Tamaño más pequeño del logo */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra elegante */
 }
 
+.texto-autor h3 {
+  font-size: 1.5rem; /* Tamaño del texto de autoría */
+  font-family: 'multiFont', sans-serif; /* Tipografía propia */
+  margin: 0;
+  color: #fff;
+}
+
 .disclaimer p {
-  font-size: 1rem;
+  font-size: 1.2rem; /* Texto del disclaimer más grande */
   line-height: 1.6;
   color: #ccc; /* Texto gris claro */
+}
+
+/* Imagen con opacidad debajo del texto */
+.imagen-opacidad {
+  position: relative;
+  margin-top: 20px; /* Espacio entre el texto y la imagen */
+  text-align: center;
+}
+
+.imagen-dlc {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  max-width: 800px; /* Limita el ancho máximo */
+  opacity: 0.3; /* Aplica opacidad */
+  filter: brightness(0.8); /* Ajusta el brillo para mayor contraste */
+  border-radius: 10px; /* Bordes redondeados */
 }
