@@ -258,3 +258,104 @@ section {
   line-height: 1.6; 
   margin: 0;
 }
+
+/* SECCION CAMPAÑA */
+.Campana {
+  background-color: #f9f9f9; /* Fondo blanco roto */
+  color: #000; /* Texto negro */
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-descripcion-campana {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titulo-campana {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.descripcion-campana {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.contribuciones {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.contribuciones h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contribucion {
+  margin-bottom: 30px;
+}
+
+.contribucion h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contribucion p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.contribucion ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.contribucion ul li {
+  margin-bottom: 5px;
+}
+
+.objetivos {
+  width: 100%;
+  max-width: 800px;
+}
+
+.objetivos h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.barra-progreso {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.objetivo {
+  display: flex;
+  flex-direction: column;
+}
+
+.objetivo p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.progreso {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  position: relative;
+}
+
+.progreso::after {
+  content: '';
+  display: block;
+  height: 100%;
+  background-color: #3b1c1c; /* Color del progreso */
+  border-radius: 5px;
+  width: 100%; /* Cambia según el progreso */
+}
