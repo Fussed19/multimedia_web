@@ -350,3 +350,74 @@ section {
   border-radius: 5px;
   width: 100%; /* Cambia según el progreso */
 }
+
+/* Barra de progreso única */
+.barra-progreso-unica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.progreso-total {
+  width: 100%;
+  max-width: 800px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progreso-actual {
+  height: 100%;
+  background-color: #3b1c1c; /* Color del progreso */
+  border-radius: 10px 0 0 10px;
+  transition: width 0.5s ease-in-out; /* Animación suave */
+}
+
+.lista-objetivos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.lista-objetivos li {
+  text-align: center;
+  flex: 1;
+  position: relative;
+}
+
+.lista-objetivos li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 10px;
+  background-color: #000;
+}
+
+.boton-donar {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-family: 'multiFont', sans-serif; /* Usa la tipografía especial */
+  color: #fff;
+  background-color: #3b1c1c; /* Color del botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-donar:hover {
+  background-color: #5a2a2a; /* Color más claro al pasar el ratón */
+}
