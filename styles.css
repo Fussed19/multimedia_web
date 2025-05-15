@@ -604,7 +604,7 @@ section {
 .logo-fijo {
   position: fixed;
   bottom: 20px; /* Distancia desde la parte inferior */
-  right: 20px; /* Distancia desde la parte derecha */
+  right: 80px; /* Distancia desde el botón de mute */
   z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
@@ -646,6 +646,37 @@ section {
 }
 
 /* Estilo del botón de mute */
+.mute-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 40px; /* Tamaño del botón */
+  height: 40px; /* Tamaño del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mute-icon {
+  width: 30px; /* Tamaño del icono */
+  height: auto;
+  opacity: 0.7; /* Hace el icono un poco opaco */
+  transition: opacity 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.mute-icon:hover {
+  opacity: 1; /* Aumenta la opacidad al pasar el ratón */
+}
+
+/* BOTÓN DE MUTE FIJO */
+.audio-fijo {
+  position: fixed;
+  bottom: 20px; /* Distancia desde la parte inferior */
+  right: 20px; /* Distancia desde la parte derecha */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
 .mute-button {
   background: none;
   border: none;
