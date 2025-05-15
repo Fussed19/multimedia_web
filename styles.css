@@ -377,6 +377,7 @@ section {
   transition: width 0.5s ease-in-out; /* Animación suave */
 }
 
+/* Lista de objetivos */
 .lista-objetivos {
   list-style: none;
   padding: 0;
@@ -405,19 +406,21 @@ section {
   background-color: #000;
 }
 
+/* Botón DONAR AHORA */
 .boton-donar {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 1.2rem;
+  margin-top: 40px;
+  padding: 15px 30px;
+  font-size: 1.5rem;
   font-family: 'multiFont', sans-serif; /* Usa la tipografía especial */
   color: #fff;
   background-color: #3b1c1c; /* Color del botón */
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .boton-donar:hover {
   background-color: #5a2a2a; /* Color más claro al pasar el ratón */
+  transform: scale(1.05); /* Efecto de agrandamiento */
 }
