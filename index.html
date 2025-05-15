@@ -29,7 +29,7 @@
   <!-- Menú de navegación -->
   <div id="menu">
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <nav id="nav-menu" class="nav-menu">
+    <nav id="nav-menu" class="nav-menu hidden">
       <ul>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#comentarios">Comentarios</a></li>
@@ -129,5 +129,11 @@
   </div>
 
   <script src="scripts.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
 </body>
 </html>
