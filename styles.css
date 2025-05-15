@@ -324,15 +324,15 @@ section {
 /* Barra de progreso única (vertical) */
 .barra-progreso-unica {
   display: flex;
-  flex-direction: column; /* Mantén los elementos en columna */
+  flex-direction: row; /* Coloca la barra y los objetivos en línea horizontal */
   align-items: center;
-  gap: 10px; /* Reduce el espacio entre la barra y los objetivos */
+  gap: 20px; /* Espacio entre la barra y los objetivos */
   width: 100%;
 }
 
 .progreso-total {
-  width: 15px; /* Reduce el ancho de la barra */
-  height: 300px; /* Reduce la altura de la barra */
+  width: 15px; /* Ancho de la barra */
+  height: 300px; /* Altura de la barra */
   background-color: #ddd;
   border-radius: 10px;
   position: relative;
@@ -349,21 +349,22 @@ section {
   transition: height 0.5s ease-in-out; /* Animación suave */
 }
 
-/* Lista de objetivos (vertical) */
+/* Lista de objetivos (alineados verticalmente a la derecha de la barra) */
 .lista-objetivos {
   list-style: none;
   padding: 0;
-  margin: 10px 0 0 0; /* Reduce el margen superior */
+  margin: 0;
   display: flex;
   flex-direction: column; /* Alinea los objetivos en columna */
-  gap: 10px; /* Reduce el espacio entre los objetivos */
+  justify-content: space-between; /* Distribuye los objetivos a lo largo de la barra */
+  height: 300px; /* Altura igual a la barra de progreso */
   font-size: 0.9rem; /* Reduce el tamaño del texto */
-  align-items: flex-start; /* Alinea los textos a la izquierda */
 }
 
 .lista-objetivos li {
   position: relative;
-  font-size: 0.9rem; /* Reduce el tamaño del texto */
+  font-size: 0.9rem; /* Tamaño del texto */
+  text-align: left; /* Alinea el texto a la izquierda */
 }
 
 .lista-objetivos li::before {
@@ -372,8 +373,8 @@ section {
   left: -20px; /* Ajusta la posición del marcador */
   top: 50%;
   transform: translateY(-50%);
-  width: 8px; /* Reduce el tamaño del marcador */
-  height: 8px; /* Reduce el tamaño del marcador */
+  width: 8px; /* Tamaño del marcador */
+  height: 8px; /* Tamaño del marcador */
   background-color: #3b1c1c; /* Color del marcador */
   border-radius: 50%; /* Forma circular */
 }
@@ -381,7 +382,7 @@ section {
 /* Botón DONAR AHORA */
 .boton-donar {
   margin-top: 20px; /* Reduce el margen superior */
-  padding: 10px 20px; /* Reduce el tamaño del botón */
+  padding: 5px 10px; /* Reduce el tamaño del botón */
   font-size: 1.2rem; /* Reduce el tamaño del texto */
   font-family: 'multiFont', sans-serif; /* Usa la tipografía especial */
   color: #fff;
@@ -395,4 +396,57 @@ section {
 .boton-donar:hover {
   background-color: #5a2a2a; /* Color más claro al pasar el ratón */
   transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+/* SECCION JUEGO */
+.Juego {
+  background-color: #3b1c1c; /* Fondo similar al gameplay */
+  color: #fff; /* Texto blanco */
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido-juego {
+  display: flex;
+  flex-direction: row; /* Imagen y texto en línea */
+  gap: 40px; /* Espacio entre la imagen y el texto */
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+.imagen-juego {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.screenshot {
+  width: 500px;
+  height: 500px;
+  object-fit: cover; /* Asegura que la imagen mantenga proporciones */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.texto-juego {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-juego {
+  width: 300px; /* Tamaño del logo */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.texto-juego p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
 }
