@@ -601,8 +601,20 @@ section {
 .logo-fijo {
   position: fixed;
   bottom: 20px; 
-  right: 80px;
+  right: 20px; 
   z-index: 1000; 
+}
+
+.logo-juego-fijo {
+  width: 80px; 
+  height: auto;
+  opacity: 0.7; 
+  transition: opacity 0.3s ease; 
+  cursor: pointer;
+}
+
+.logo-juego-fijo:hover {
+  opacity: 1; 
 }
 
 /* AUDIO */
