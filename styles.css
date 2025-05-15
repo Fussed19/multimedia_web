@@ -650,6 +650,11 @@ section {
   border: none;
   cursor: pointer;
   padding: 0;
+  width: 40px; /* Tamaño del botón */
+  height: 40px; /* Tamaño del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mute-icon {
