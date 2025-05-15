@@ -3,13 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de Inicio</title>
+  <title>RhythmRumble Found Me!</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
+<!--DESPLGABLE -->
 <body>
-  <div class="Inicio">
+  <div id="menu">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu" class="nav-menu">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#descripcion">Descripción</a></li>
+        <li><a href="#campana">Campaña</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+      </ul>
+    </nav>
+  </div>
+
+<!-- PAGINA INICIO -->
+  <section id="inicio" class="Inicio">
     <h1 class="tituloInicio">Rhythm Rumble</h1>
     <p class="lemaInicio">"Cuando el beat sube... tú decides quién cae."</p>
-  </div>
+  </section>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
