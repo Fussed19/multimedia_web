@@ -16,7 +16,7 @@ body, html {
   position: fixed;
   top: 20px;
   left: 20px;
-  color: white;
+  color: rgba(255, 255, 255, 0.661);
   z-index: 1000;
 }
 
@@ -37,20 +37,20 @@ body, html {
 
 .nav-menu {
   position: fixed;
-  top: 0;
-  left: -250px; 
+  top: 80px; 
+  left: 20px;
   width: 250px;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: left 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.9); 
+  color: white;
+  border-radius: 15px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: none; 
+  z-index: 999;
 }
 
 .nav-menu.show {
-  left:0;
+  display: block;
 }
 
 .nav-menu ul {
@@ -60,13 +60,13 @@ body, html {
 }
 
 .nav-menu ul li {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .nav-menu ul li a {
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .nav-menu ul li a:hover {
@@ -132,19 +132,19 @@ body, html {
   border: 3px solid #2b2929;
 }
 
-.texto_gameplay {
+.gameplay_texto {
   flex: 1; 
   padding: 20px;
   align-items: center;
 }
 
-.texto_gameplay h2{
+.gameplay_texto h2{
   font-family: 'multiFont', sans-serif; 
   font-size: 2.5rem;
   margin: 0 0 20px 0;    
 }
 
-.texto_gameplay p {
+.gameplay_texto p {
   font-family: sans-serif; 
   font-size: 1.2rem; 
   line-height: 1.6; 
