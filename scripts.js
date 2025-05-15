@@ -9,9 +9,17 @@ const muteButton = document.getElementById('mute-button');
 const audio = new Audio('audio/cancionMain.mp3'); // Asegúrate de que esta ruta sea correcta
 
 audio.loop = true; // Reproduce en bucle
-audio.play().catch((error) => {
-  console.error('La reproducción automática fue bloqueada:', error);
-}); // Intenta reproducir automáticamente
+
+// Reproduce el audio después de una interacción del usuario
+document.addEventListener('DOMContentLoaded', () => {
+  document.body.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play().catch((error) => {
+        console.error('Error al intentar reproducir el audio:', error);
+      });
+    }
+  }, { once: true }); // Asegura que solo se ejecute una vez
+});
 
 let isMuted = false;
 
