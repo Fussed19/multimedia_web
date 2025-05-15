@@ -263,17 +263,17 @@ section {
 .Campana {
   background-color: #f9f9f9; /* Fondo blanco roto */
   color: #000; /* Texto negro */
-  padding: 50px 20px;
+  padding: 40px 20px; /* Reduce el padding general */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px; /* Reduce el espacio general entre los elementos */
+  gap: 20px; /* Reduce el espacio general entre los elementos */
 }
 
 .titulo-campana {
   font-size: 4rem; /* Título grande */
   font-family: 'multiFont', sans-serif; /* Tipografía propia */
-  margin-bottom: 20px; /* Reduce el espacio debajo del título */
+  margin-bottom: 15px; /* Reduce el espacio debajo del título */
   text-align: center;
 }
 
@@ -281,7 +281,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 30px; /* Reduce el espacio entre las columnas */
+  gap: 20px; /* Reduce el espacio entre las columnas */
   width: 100%;
   max-width: 1200px;
 }
@@ -293,12 +293,12 @@ section {
 .contribuciones h3, .objetivos h3 {
   font-size: 2.3rem;
   font-family: 'multiFont', sans-serif; /* Aplica la tipografía propia */
-  margin-bottom: 15px; /* Reduce el espacio debajo de los subtítulos */
+  margin-bottom: 10px; /* Reduce el espacio debajo de los subtítulos */
   text-align: center;
 }
 
 .contribucion {
-  margin-bottom: 10px; /* Reduce el espacio entre las contribuciones */
+  margin-bottom: 8px; /* Reduce el espacio entre las contribuciones */
 }
 
 .contribucion h4 {
@@ -385,7 +385,7 @@ section {
 
 /* Botón DONAR AHORA */
 .boton-donar {
-  margin-top: 20px; /* Reduce el espacio superior del botón */
+  margin-top: 15px; /* Reduce el espacio superior del botón */
   padding: 15px 30px; /* Botón ligeramente más pequeño */
   font-size: 1.5rem;
   font-family: 'multiFont', sans-serif;
@@ -439,20 +439,20 @@ section {
   flex: 1; /* Texto más pequeño */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Subir el texto */
   gap: 20px; /* Espacio entre los cuadros de texto */
 }
 
 .caja-texto {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px; /* Reduce el espacio entre los cuadros */
 }
 
 .titulo-juego {
   font-size: 4rem; /* Título grande */
   font-family: 'multiFont', sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Reduce el espacio debajo del título */
   text-align: center;
 }
 
@@ -504,6 +504,7 @@ section {
   gap: 20px; /* Espacio entre las cajas */
   width: 100%;
   max-width: 1200px; /* Ancho máximo */
+  justify-content: center; /* Centra las columnas */
 }
 
 .caja-pregunta {
@@ -512,17 +513,6 @@ section {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
   text-align: left;
-}
-
-.caja-pregunta h3 {
-  font-size: 1.5rem;
-  font-family: 'multiFont', sans-serif; /* Tipografía propia */
-  margin-bottom: 10px;
-}
-
-.caja-pregunta p {
-  font-size: 1rem;
-  line-height: 1.6;
 }
 
 /* SECCION COMENTARIOS */
@@ -549,4 +539,37 @@ section {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* SECCION AUTORÍA Y DISCLAIMER */
+.Autoria {
+  background-color: #202020; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contenido-autoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  max-width: 800px;
+}
+
+.logo-equipo img {
+  width: 150px; /* Tamaño del logo */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra elegante */
+}
+
+.disclaimer p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc; /* Texto gris claro */
 }
