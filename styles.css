@@ -528,7 +528,7 @@ section {
 
 /* SECCION COMENTARIOS */
 .Comentarios {
-  background-color: #f9f9f9; /* Fondo claro */
+  background-color: #5a2a2a; /* Fondo claro */
   color: #000; /* Texto negro */
   padding: 50px 20px;
   display: flex;
@@ -626,6 +626,7 @@ section {
   bottom: 20px; /* Distancia desde la parte inferior */
   right: 20px; /* Distancia desde la parte derecha */
   display: flex;
+  flex-direction: column; /* Coloca los elementos en columna */
   align-items: center;
   gap: 10px; /* Espacio entre el logo y el botón */
   z-index: 1000; /* Asegura que esté por encima de otros elementos */
