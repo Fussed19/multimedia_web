@@ -620,14 +620,14 @@ section {
   opacity: 1; /* Aumenta la opacidad al pasar el ratón */
 }
 
-/* Contenedor del logo y reproductor de audio */
+/* Contenedor del logo y botón de mute */
 .logo-y-audio {
   position: fixed;
   bottom: 20px; /* Distancia desde la parte inferior */
   right: 20px; /* Distancia desde la parte derecha */
   display: flex;
   align-items: center;
-  gap: 10px; /* Espacio entre el logo y el reproductor */
+  gap: 10px; /* Espacio entre el logo y el botón */
   z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
@@ -644,11 +644,21 @@ section {
   opacity: 1; /* Aumenta la opacidad al pasar el ratón */
 }
 
-/* Estilo del reproductor de audio */
-.audio-fijo audio {
-  width: 150px; /* Ancho del reproductor */
-  height: 30px; /* Altura del reproductor */
-  background-color: #202020; /* Fondo oscuro */
-  border: none; /* Sin bordes */
-  border-radius: 5px; /* Bordes redondeados */
+/* Estilo del botón de mute */
+.mute-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mute-icon {
+  width: 30px; /* Tamaño del icono */
+  height: auto;
+  opacity: 0.7; /* Hace el icono un poco opaco */
+  transition: opacity 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.mute-icon:hover {
+  opacity: 1; /* Aumenta la opacidad al pasar el ratón */
 }
